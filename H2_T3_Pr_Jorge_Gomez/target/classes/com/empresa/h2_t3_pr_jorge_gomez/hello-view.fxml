@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.empresa.h2_t3_pr_jorge_gomez.HelloController" spacing="20" alignment="CENTER">
+    <children>
+        <HBox spacing="10" alignment="CENTER">
+            <children>
+                <Button onAction="#deleteRecord" text="Eliminar" />
+                <Button onAction="#updateRecord" text="Actualizar Jugador" />
+                <Button onAction="#readRecords" text="Leer Registros" />
+                <Button onAction="#openPlayerForm" text="Agregar Jugador" />
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" prefHeight="400.0" prefWidth="900.0" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="nameColumn" text="Nombre" />
+                <TableColumn fx:id="positionColumn" text="Posición" />
+                <TableColumn fx:id="dorsalColumn" text="Dorsal" />
+                <TableColumn fx:id="edadColumn" text="Edad" />
+                <TableColumn fx:id="nacionalidadColumn" text="Nacionalidad" />
+                <TableColumn fx:id="valorColumn" text="Valor" />
+                <TableColumn fx:id="partidosColumn" text="Partidos" />
+                <TableColumn fx:id="golesColumn" text="Goles" />
+                <TableColumn fx:id="asistenciasColumn" text="Asistencias" />
+                <TableColumn fx:id="minutosColumn" text="Minutos" />
+            </columns>
+        </TableView>
+        <Button onAction="#generatePDF" text="Generar PDF" />
+    </children>
+</VBox>
